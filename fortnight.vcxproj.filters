@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione\spoofing">
+      <UniqueIdentifier>{3a139a98-c6c1-4ea7-a93d-a071394860cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\framework">
+      <UniqueIdentifier>{d5141415-f9f7-4ace-8d1d-1175ac9673a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\overlay">
+      <UniqueIdentifier>{2d0935ea-f249-4d29-9431-5b91aaa46268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\render">
+      <UniqueIdentifier>{60ad5036-0d7e-4526-9695-1f7af12c25bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mintest">
+      <UniqueIdentifier>{31ccc6f4-1422-4989-860c-ab092979b421}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="overlay.cpp">
+      <Filter>File di intestazione\overlay</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>mintest</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde32.c">
+      <Filter>mintest</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>mintest</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>mintest</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>mintest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="lazy.hpp">
+      <Filter>File di intestazione\spoofing</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.hpp">
+      <Filter>File di intestazione\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="overlay.hpp">
+      <Filter>File di intestazione\overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.hpp">
+      <Filter>File di intestazione\spoofing</Filter>
+    </ClInclude>
+    <ClInclude Include="spoofcall.hpp">
+      <Filter>File di intestazione\spoofing</Filter>
+    </ClInclude>
+    <ClInclude Include="render\renderer.h">
+      <Filter>File di intestazione\render</Filter>
+    </ClInclude>
+    <ClInclude Include="features.hpp">
+      <Filter>File di intestazione\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="vectors.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\MinHook.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\buffer.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\hde32.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\hde64.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\pstdint.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\table32.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\hde\table64.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\src\trampoline.h">
+      <Filter>mintest</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoofcall.asm">
+      <Filter>File di intestazione\spoofing</Filter>
+    </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="minhook\dll_resources\MinHook.def">
+      <Filter>mintest</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="minhook\dll_resources\MinHook.rc">
+      <Filter>mintest</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
